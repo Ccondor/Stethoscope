@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  equalizer
 //
-//  Created by Sergio Sebastián Arriagada on 25/4/17.
+//  Created by Carlos David Tolaba on 02/5/17.
 //  Copyright © 2017 Hashdog. All rights reserved.
 //
 
