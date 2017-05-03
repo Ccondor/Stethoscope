@@ -12,6 +12,7 @@
 		5D6672C21EAFA717002C967B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6672C01EAFA717002C967B /* Main.storyboard */; };
 		5D6672C41EAFA717002C967B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6672C31EAFA717002C967B /* Assets.xcassets */; };
 		5D6672C71EAFA717002C967B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6672C51EAFA717002C967B /* LaunchScreen.storyboard */; };
+		D7572B7170D306F8E4A87E18 /* Pods_equalizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C509CC06881B3B31FEF77383 /* Pods_equalizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5D6672C31EAFA717002C967B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D6672C61EAFA717002C967B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D6672C81EAFA717002C967B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A5DF872091965FF1E40B6E /* Pods-equalizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-equalizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-equalizer/Pods-equalizer.release.xcconfig"; sourceTree = "<group>"; };
+		C509CC06881B3B31FEF77383 /* Pods_equalizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_equalizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDD77111D0B9AAFEF98C7FE /* Pods-equalizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-equalizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-equalizer/Pods-equalizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7572B7170D306F8E4A87E18 /* Pods_equalizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5D6672BB1EAFA717002C967B /* equalizer */,
 				5D6672BA1EAFA717002C967B /* Products */,
+				906B7AF8C1C7024BAAA7684F /* Pods */,
+				F8E7A4A9B4428269286C2AE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = equalizer;
 			sourceTree = "<group>";
 		};
+		906B7AF8C1C7024BAAA7684F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD77111D0B9AAFEF98C7FE /* Pods-equalizer.debug.xcconfig */,
+				98A5DF872091965FF1E40B6E /* Pods-equalizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8E7A4A9B4428269286C2AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C509CC06881B3B31FEF77383 /* Pods_equalizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D6672CB1EAFA717002C967B /* Build configuration list for PBXNativeTarget "equalizer" */;
 			buildPhases = (
+				CFBEA2DA6A04BEA70A2AAFFA /* [CP] Check Pods Manifest.lock */,
 				5D6672B51EAFA717002C967B /* Sources */,
 				5D6672B61EAFA717002C967B /* Frameworks */,
 				5D6672B71EAFA717002C967B /* Resources */,
+				AF16127E21BD55D5749CB8F9 /* [CP] Embed Pods Frameworks */,
+				4B22EF9E216DEB93F687BDDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +123,7 @@
 				TargetAttributes = {
 					5D6672B81EAFA717002C967B = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = MJY9BJFHDH;
+						DevelopmentTeam = P4R5RF8U44;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B22EF9E216DEB93F687BDDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-equalizer/Pods-equalizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF16127E21BD55D5749CB8F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-equalizer/Pods-equalizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFBEA2DA6A04BEA70A2AAFFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D6672B51EAFA717002C967B /* Sources */ = {
@@ -259,12 +334,13 @@
 		};
 		5D6672CC1EAFA717002C967B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDD77111D0B9AAFEF98C7FE /* Pods-equalizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MJY9BJFHDH;
+				DEVELOPMENT_TEAM = P4R5RF8U44;
 				INFOPLIST_FILE = equalizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hashdog.equalizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.equalizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,12 +348,13 @@
 		};
 		5D6672CD1EAFA717002C967B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A5DF872091965FF1E40B6E /* Pods-equalizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MJY9BJFHDH;
+				DEVELOPMENT_TEAM = P4R5RF8U44;
 				INFOPLIST_FILE = equalizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hashdog.equalizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.equalizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +379,7 @@
 				5D6672CD1EAFA717002C967B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
